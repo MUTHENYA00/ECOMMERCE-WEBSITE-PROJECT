@@ -32,12 +32,14 @@ max-width: 400px;
 }
 
 .nav-search-tab input {
-    color:black;
+
     font-size:16px;       /* text size */
     font-weight:500;      /* thickness */
     font-family:Arial;    /* font */
     align-items: center;
-    display:inline-block;
+    border:none;
+    outline:none;
+    flex:1;
 
     
 }
