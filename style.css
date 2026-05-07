@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+*{
+  margin:0;
+  padding:0;
+}
+body{
+   background: whitesmoke;
+   font-family: "Outfit",sans-serif,;
+}
+.nav-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background: green;
+  border-radius:none;
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+  /* Section under the nav search tab on the top*/
+.nav-search-tab{
+display:flex;
+align-items:center;
+background:white;
+border-radius:20px;
+padding:8px;
+width:100%;
+max-width: 400px;
+ border:none;
+}
+
+.nav-search-tab input {
+    color:black;
+    font-size:16px;       /* text size */
+    font-weight:500;      /* thickness */
+    font-family:Arial;    /* font */
+    align-items: center;
+    display:inline-block;
+
+    
+}
+.nav-search-tab img{
+    margin-right:auto;
+    display:flex;
+    
+
+}
+
+/*Header Banner Style*/
+ .header-slide ul{
+  
+ display: flex;
+    gap: 5px;          /* space between images */
+    
+    font-weight:500;
+    overflow-y: hidden;
+
+ }
+ .header-img{
+ max-width: 300%;       /* SAME width for all */
+    height: 400px;      /* SAME height for all */
+    object-fit: cover;  /* prevents distortion */
+    display: block;
+    mask-image:linear-gradient(to bottom,#000000 50%,transparent 100%);
+
+ }
+ .header-banner-images{
+
+  display:flex;
+  
+ }
+ .box-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 30px;
+}
+
+.box-col {
+    flex: 1 1 calc(25% - 20px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 20px;
+    background: #fff;
+    min-height: 200px;
+    box-sizing: border-box;
+}
+
+/* make images uniform */
+.box-col img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.box-col a {
+    font-weight: 500;
+    color: #009999;
+    font-size: 13px;
+}
+
+/*Product-Slider Part*/
+.products-slider{
+
+ background:#fff;
+ margin:0 30px;
+ padding:20px;
+ margin-bottom:15px;
+}
+
+.products-slider .products{
+
+    display:flex;
+    overflow-x:auto;
+    gap:20px;
+    margin-top:10px;
+}
+
+.products-slider .products img{
+
+    max-width:200px;
+    max-height: 200;
+    
+}
+.products-slider .products::-webkit-scrollbar{
+    display:none;
+}
+.products-slider-with-price{
+    background:#fff;
+    margin:0 30px;
+    padding:20px;
+    margin-bottom:15px;
+    
+}
+.products-slider-with-price .products{
+    display:flex;
+    overflow-x:auto;
+    gap:10px;
+    margin-top:10px;
+    border-radius: 0%;
+}
+
+.products-slider-with-price .products::weblit-scrollbar{
+    display:none;
+}
+.products-card{
+    display:flex;
+    flex-direction:column;
+    justify-content:end;
+    min-width:210px;
+    background:rgb(203, 179, 179);
+}
+
+.products-card img{
+    width:200px;
+    max-height:200px;
+    background-color: none;
+}
+
+.product-offer p{
+    background:orange;
+    color:#fff;
+    display:inline-block;
+    padding: 2px 5px;
+    border-radius:2px;
+    margin:8px 0;
+    font-size:13px;
+
+}
+
+.product-offer span{
+    color:#be0b3b ;
+    font-weight:500;
+    font-size:12px;
+}
+.products-price{
+    color:gray;
+    font-size:13px;
+}
+.product-card h4{
+    color:#be0b3b;
+    font-size:15px;
+    font-weight:400;
+}
+footer{
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:#fff;
+background:green;
+padding:20px 60px;
+
+}
+

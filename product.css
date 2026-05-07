@@ -1,0 +1,31 @@
+body{
+    background:#fff;
+}
+
+.breadcrum{
+    padding:10px 20px;
+    font-size: 12px;
+    color:#565656;
+}
+.product-display{
+    min-height: 100%;
+    padding: 10px 20px;
+    display:flex;
+    
+}
+.product-d-image{
+    display:flex;
+    gap:30px;
+}
+.product-icons{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.product-icon img{
+border:1px solid gray;
+border-radius:10px;
+padding:5px;
+
+}
