@@ -1,17 +1,29 @@
-
 let currentIndex = 0;
-const images = document.querySelectorAll(".header-img");
 
-function showNextImage() {
-    // remove active from current image
-    images[currentIndex].classList.remove("active");
+function initSlider() {
+    const images = document.querySelectorAll(".header-img");
 
-    // move to next image
-    currentIndex = (currentIndex + 1) % images.length;
+    function showImage(index) {
+        images.forEach(img => img.classList.remove("active"));
+        images[index].classList.add("active");
+    }
 
-    // show next image
-    images[currentIndex].classList.add("active");
+    // make functions global so HTML onclick can access them
+    window.nextImage = function () {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+    };
+
+    window.prevImage = function () {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage(currentIndex);
+    };
+
+    // auto slide
+    setInterval(function () {
+        window.nextImage();
+    }, 3000);
 }
 
-// change image every 3 seconds
-setInterval(showNextImage, 3000);
+// run after page loads
+document.addEventListener("DOMContentLoaded", initSlider);
