@@ -1,31 +1,32 @@
-let currentIndex = 0;
+//Tracking
+const track = document.querySelector(".slide-track");
+const slides = document.querySelectorAll(".header-img");
 
-document.addEventListener("DOMContentLoaded", function () {
+const prevBtn = document.querySelector(".arrow.left");
+const nextBtn = document.querySelector(".arrow.right");
 
-    const images = document.querySelectorAll(".header-img");
-    const nextBtn = document.querySelector(".arrow.right");
-    const prevBtn = document.querySelector(".arrow.left");
+let index = 0;
 
-    function showImage(index) {
-        images.forEach(img => img.classList.remove("active"));
-        images[index].classList.add("active");
+//Move Function
+function updateSlide() {
+    track.style.transform = `translateX(-${index * 100}%)`;
+}
+//Prev Button
+prevBtn.addEventListener("click", () => {
+    if (index > 0) {
+        index--;
+    } else {
+        index = slides.length - 1; // loop back
     }
+    updateSlide();
+});
+//Next Button
 
-    function nextImage() {
-        currentIndex = (currentIndex + 1) % images.length;
-        showImage(currentIndex);
+nextBtn.addEventListener("click", () => {
+    if (index < slides.length - 1) {
+        index++;
+    } else {
+        index = 0; // loop back to start
     }
-
-    function prevImage() {
-        currentIndex = (currentIndex - 1 + images.length) % images.length;
-        showImage(currentIndex);
-    }
-
-    // 👉 button clicks now WORK properly
-    nextBtn.addEventListener("click", nextImage);
-    prevBtn.addEventListener("click", prevImage);
-
-    // 👉 auto slide
-    setInterval(nextImage, 3000);
-
+    updateSlide();
 });
