@@ -98,7 +98,12 @@ max-width: 400px;
     right: 10px;
 }
 
+.slide-track{
+ display:flex;
+    transition: transform 0.5s ease;
+    width: 100%;
 
+}
 
  
  .header-banner-image{

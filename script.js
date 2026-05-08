@@ -1,32 +1,33 @@
-//Tracking
-const track = document.querySelector(".slide-track");
-const slides = document.querySelectorAll(".header-img");
+document.addEventListener("DOMContentLoaded", () => {
 
-const prevBtn = document.querySelector(".arrow.left");
-const nextBtn = document.querySelector(".arrow.right");
+    const track = document.querySelector(".slide-track");
+    const slides = document.querySelectorAll(".header-img");
 
-let index = 0;
+    const prevBtn = document.querySelector(".arrow.left");
+    const nextBtn = document.querySelector(".arrow.right");
 
-//Move Function
-function updateSlide() {
-    track.style.transform = `translateX(-${index * 100}%)`;
-}
-//Prev Button
-prevBtn.addEventListener("click", () => {
-    if (index > 0) {
-        index--;
-    } else {
-        index = slides.length - 1; // loop back
+    let index = 0;
+
+    function updateSlide() {
+        if (track) {
+            track.style.transform = `translateX(-${index * 100}%)`;
+        }
     }
-    updateSlide();
-});
-//Next Button
 
-nextBtn.addEventListener("click", () => {
-    if (index < slides.length - 1) {
-        index++;
+    if (prevBtn && nextBtn) {
+
+        prevBtn.addEventListener("click", () => {
+            index = (index > 0) ? index - 1 : slides.length - 1;
+            updateSlide();
+        });
+
+        nextBtn.addEventListener("click", () => {
+            index = (index < slides.length - 1) ? index + 1 : 0;
+            updateSlide();
+        });
+
     } else {
-        index = 0; // loop back to start
+        console.error("Arrow buttons not found in HTML");
     }
-    updateSlide();
+
 });

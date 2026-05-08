@@ -62,14 +62,19 @@ max-width: 400px;
     scrollbar-width:none;
 }
 /* Individual card */
-.product-card{
-    min-width:250px;
+.Product-Card{
+    width:100%;
+  
 
  background:#fff;
-flex-shrink:0;
+border: 2px solid #ccc;   /* creates the box */
+    padding: 10px;            /* space inside the border */
+    border-radius: 10px;      /* smooth corners */
+    background: white;        /* makes it look like a card */
+
     border-radius:10px;
 
-    padding:15px;
+   
 }
 
 .Toy-Packages-Collection::-webkit-scrollbar{
