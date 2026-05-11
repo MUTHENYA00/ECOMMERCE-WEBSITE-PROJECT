@@ -97,12 +97,10 @@ max-width: 400px;
 .arrow.right {
     right: 10px;
 }
-
 .slide-track{
  display:flex;
     transition: transform 0.5s ease;
     width: 100%;
-
 }
 
  

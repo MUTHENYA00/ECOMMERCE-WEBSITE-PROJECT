@@ -41,7 +41,7 @@
                     <h3>Lego Toy Set</h3>
                         <p>Features main adventures of Lego Cartoon for Kids</p>
                         <p class="Price-Toy">Ksh 2000</p>
-                        <button class="buy-now">Buy Now</button>
+                        <button class="buy-now" onclick="openBuyNow(this)">Buy Now</button>
                         <br>
                         <button class="add-to-cart">
                             Add to Cart
@@ -54,7 +54,7 @@
                       <h3>Building Blocks</h3>
                       <p>Best for children even under playgroup </p>
                       <p class="Price-Toy">Ksh 1000</p>
-                      <button class="buy-now">Buy Now</button>
+                      <button class="buy-now" onclick="openBuyNow(this)">Buy Now</button>
                       <br>
                        <button class="add-to-cart">
                         Add to Cart
@@ -67,7 +67,7 @@
                     <h3>Police Car Toy</h3>
                     <p >Fun for Kids </p>
                     <p class="Price-Toy">Ksh 540</p>
-                    <button class="buy-now">Buy Now</button>
+                    <button class="buy-now"onclick="openBuyNow(this)">Buy Now</button>
                     <br>
                     <button class="add-to-cart">
                         Add to Cart
@@ -80,7 +80,7 @@
                         <h3>Growsland Remote Car</h3>
                         <p>Features autocontrol features</p>
                         <p class="Price-Toy">Ksh 1500</p>
-                        <button class="buy-now">Buy Now</button>
+                        <button class="buy-now"onclick="openBuyNow(this)">Buy Now</button>
                         <br>
                         <button class="add-to-cart">
                             Add to Cart
@@ -97,13 +97,16 @@
                                     <p class="Price-Toy">Ksh 1800</p>
                                     <button class="buy-now">Buy Now</button>
                                     <br>
-                                     <button class="add-to-cart">
+                                     <button class="add-to-cart" >
                                         Add to Cart
                                     </button>
                                 </div>
 
                                 <!--Product 6-->
-                                <div class="Product-Card">
+                                <div class="Product-Card"
+                                    data-name="Wireless Helicopter Remote Control"
+                                     data-price="Ksh 2500"
+                                     data-image="assets/Collection_Products/Toy Collections/wireless_air.png">
                                     <img src="assets/Collection_Products/Toy Collections/wireless_air.png" 
                                     alt="wireless airplain remote">
                                     <h3>Wireless Helicopter Remote Control</h3>
@@ -130,7 +133,25 @@
                                 </div>
 
             </div>
-    
+    <script src="products.js"></script>
+
+    <div id="buyNowModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeBuyNow()">&times;</span>
+
+        <img id="modalImage" width="200">
+
+        <h2 id="modalName"></h2>
+
+        <p id="modalPrice"></p>
+
+        <button>Confirm Purchase</button>
+
+    </div>
+
+</div>
    
     </body>
     </html>
