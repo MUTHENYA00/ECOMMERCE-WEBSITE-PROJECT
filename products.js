@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    
     // ADD TO CART (basic redirect)
-    
     document.querySelectorAll(".add-to-cart").forEach(button => {
         button.addEventListener("click", function () {
             window.location.href = "cart.html";
@@ -10,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
-
 
 
 // OPEN BUY NOW MODAL
@@ -42,9 +39,7 @@ function openBuyNow(button){
 }
 
 
-
 // CLOSE MODAL
-
 function closeBuyNow(){
 
     let modal = document.getElementById("buyNowModal");
@@ -55,11 +50,10 @@ function closeBuyNow(){
 }
 
 
-// CONFIRM PURCHASE
-
+// CONFIRM PURCHASE → REDIRECT TO SIGN IN
 function confirmPurchase(){
 
-    alert("Purchase Confirmed!");
-
     closeBuyNow();
+
+    window.location.href = "signin.html";
 }
