@@ -13,7 +13,7 @@
 </head>
 <body >
     
-    <script src="script.js"></script>
+   
     <nav>
            <!-- the upper header on the top-->
         <div class="nav-header">
@@ -194,7 +194,7 @@
                <div class="products-slider-with-price">
     <h3>Best Deals </h3>
     <div class ="products">
-        <div class="products-card">
+        <div class="products-card ">
             <div class="product-img-container">
                 <img src="assets/Slider-Products -price/sportsBike.png" alt="">
                 <h3>Sports Bike</h3>
@@ -293,7 +293,7 @@
 <p> Ksh<span>3190</span> <del>Ksh 5800</del></p>
 
        </div>
-       <div class="products-card">
+       <div class="products-card ">
             <div class="product-img-container">
                 <img src="assets/Slider-Products -price/Tp_link.png" alt="">
                 <h3>TP-Link Archer</h3>
@@ -304,7 +304,7 @@
 <p> Ksh<span>6750</span> <del>Ksh 9000</del></p>
 
        </div>
-       <div class="products-card">
+       <div class="products-card " >
             <div class="product-img-container">
                 <img src="assets/Slider-Products -price/cardboard.png" alt="">
                 <h3>Card Board</h3>
@@ -315,7 +315,7 @@
 <p> Ksh<span>17280</span> <del>Ksh 21600</del></p>
 
        </div>
-       <div class="products-card">
+       <div class="products-card ">
             <div class="product-img-container">
                 <img src="assets/Slider-Products -price/smart_toilet.png" alt="">
                 <h3>Smart Toliet</h3>
@@ -372,6 +372,35 @@
 <p>@2026,Bmday.com </p>
 </footer>
     
+
+
+
+<div id="product-popup" class="popup hidden">
+    <div class="popup-content">
+
+        <span id="close-popup">&times;</span>
+
+        <img id="popup-img" src="" alt="">
+        <h3 id="popup-title"></h3>
+        <p id="popup-price"></p>
+
+        <button id="add-cart">Add to Cart</button>
+        <button id="buy-now">Buy Now</button>
+
+    </div>
+</div>
+
+<!-- Confirm Purchase Popup -->
+<div id="confirm-box" class="popup hidden">
+    <div class="popup-content">
+        <h3>Confirm Purchase?</h3>
+        <button id="confirm-buy">Confirm</button>
+        <button id="cancel-buy">Cancel</button>
+    </div>
+</div>
+
+
+ <script src="script.js"></script>
   
     
   </body>
