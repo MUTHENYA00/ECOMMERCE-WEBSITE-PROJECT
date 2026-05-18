@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auth Page</title>
+    <title>Authentication</title>
 
     <link rel="stylesheet" href="signin.css">
 </head>
+
 <body>
 
 <div class="login-container">
 
-    <!-- 🔵 LOGIN FORM -->
+    <!-- LOGIN FORM -->
     <form id="loginForm" action="/login" method="POST">
+
         <h2>Sign In</h2>
 
         <div class="input-group">
@@ -29,12 +31,16 @@
 
         <p class="footer-text">
             Don't have an account?
-            <a href="signin.html?mode=signup">Sign Up</a>
+            <a href="#" id="showSignup">Sign Up</a>
         </p>
+
     </form>
 
-    <!-- 🟢 SIGNUP FORM -->
+
+
+    <!-- SIGNUP FORM -->
     <form id="signupForm" action="/signup" method="POST">
+
         <h2>Create Account</h2>
 
         <div class="input-group">
@@ -56,45 +62,56 @@
 
         <p class="footer-text">
             Already have an account?
-            <a href="signin.html?mode=login">Sign In</a>
+            <a href="#" id="showLogin">Sign In</a>
         </p>
-        
 
-    <p style="margin:15px 0; font-size:13px; color:#666;">
-        Or sign up with
-    </p>
 
-    <div class="social-login">
+        <!-- SOCIAL LOGIN -->
+        <p style="margin:15px 0; font-size:13px; color:#666;">
+            Or continue with
+        </p>
 
-    <p>Or continue with</p>
+        <div class="social-login">
 
-    <a href="https://accounts.google.com/signin" class="social-btn google" target="_blank">
-        <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" width="20">
-        Continue with Google
-    </a>
+            <a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+               class="social-btn google"
+               target="_blank">
 
-    <a href="https://login.microsoftonline.com/" class="social-btn microsoft" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" width="20">
-        Continue with Microsoft
-    </a>
+                <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
+                     width="20">
 
-    <a href="https://appleid.apple.com/" class="social-btn apple" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" width="20">
-        Continue with Apple
-    </a>
+                Continue with Google
+            </a>
 
-</div>
 
-    
+            <a href="https://login.microsoftonline.com/"
+               class="social-btn microsoft"
+               target="_blank">
 
-    
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
+                     width="20">
 
-</div>
+                Continue with Microsoft
+            </a>
+
+
+            <a href="https://appleid.apple.com/"
+               class="social-btn apple"
+               target="_blank">
+
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+                     width="20">
+
+                Continue with Apple
+            </a>
+
+        </div>
+
     </form>
 
 </div>
 
-<script src="auth.js"></script>
+<script src="signin.js"></script>
 
 </body>
 </html>

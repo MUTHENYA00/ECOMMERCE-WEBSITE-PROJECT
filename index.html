@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -9,8 +10,6 @@
        </title>
          <link rel="stylesheet" href="style.css">
         
-         
-
 </head>
 <body >
     
@@ -22,15 +21,22 @@
             <img src="assets/nav-header 1/Bmday_logo.png"  width="100" alt="BMDAY logo">
         </a>
          <img src="assets/nav-header 1/menu_icon.png" width="40" alt="Menu" onclick="openSidebar()" style="cursor:pointer;"  >
-        <p><b>Sign In</b></p>
+        <a href="signin.html" class="nav-signin"><b>Sign In</b></a>
                   <!--Navigation search bar at the top-->
           
             <div class="nav-search-tab">
-                 <img src="assets/nav-header 1/search_icon.png"  width="30" alt="Search Icon">
-                <!-- <label>text</label>-->
-            
-                 <input type="text" placeholder="Search at Bmday">
-           </div>
+                <button class="search-btn" type="button" aria-expanded="false" aria-controls="searchDropdown">
+                    <img src="assets/nav-header 1/search_icon.png" width="28" alt="Search Icon">
+                </button>
+                <input id="searchInput" type="text" placeholder="Search at Bmday" autocomplete="off">
+                <div class="search-dropdown" id="searchDropdown" role="listbox" aria-label="Search suggestions">
+                    <div class="search-title">Search suggestions</div>
+                    <button type="button" class="dropdown-item">Popular products</button>
+                    <button type="button" class="dropdown-item">Latest devices</button>
+                    <button type="button" class="dropdown-item">Fashion clothes</button>
+                    <button type="button" class="dropdown-item">Best deals</button>
+                </div>
+            </div>
                    <!--Navigation,adding cart -->
                 <div class="nav-icon">
                     <img src="assets/nav-header 1/cart_icon.png" width="30"alt=" Cart icon">
@@ -41,22 +47,21 @@
 
 </div><!--End of nav-header-->
 
-
         <!--Header-slide images below the navigation--> 
         <div class="header-slide"> <!--Start of header-slide-->
  <button class="arrow left"> &#10094;</button>
             <div class="header-banner-image">
                 <div class="slide-track">
                     <ul>
-                <img src="assets/Header Banner Slides/header1_home.png"  class="header-img"
+                <img src="assets/Header Banner Slides/kitchen products.jpg"  class="header-img"
                 alt="Promotional Banner"> 
-               <img src="assets/Header Banner Slides/header2_fashion2.png"  class="header-img" 
+               <img src="assets/Header Banner Slides/toy for little ones.jpg"  class="header-img" 
                  alt="Fashion Banner"> 
                <img src="assets/Header Banner Slides/header3_gaming3.png" class="header-img"
                 alt="Game Banner"> 
                 <img src="assets/Header Banner Slides/header4_promotional2.png" class="header-img"
                 alt="Electrical Appliance"> 
-               <img src="assets/Header Banner Slides/header5_computer.png"  class="header-img"
+               <img src="assets/Header Banner Slides/header2_fashion.png"  class="header-img"
                  alt="accessories"> 
             </ul>
         </div>
@@ -72,8 +77,8 @@
 <div class="box-row header-box">
     <div class="box-col">
         <h3>Fashion Clothes</h3>
-        <a href="products.html">
-        <img src="assets/Box5-8/fashion_design.jpg " alt="">
+        <a href="products.html#fashion-packages">
+        <img src="assets/Box5-8/fashion clothes_result.png" alt="">
         </a>
         <a href="products.html">Shop More</a>
     </div>
@@ -81,7 +86,7 @@
      <div class="box-col">
         <h3>Latest Devices</h3>
         <a href="products.html">
-        <img src="assets/Box5-8/latest_devices.png  " alt="">
+        <img src="assets/Box1-4/Latest devices_result.png " alt="">
         </a>
         <a href="products.html">Shop More</a>
     </div>
@@ -89,7 +94,7 @@
      <div class="box-col">
         <h3>Grooming products</h3>
         <a href="products.html">
-        <img src="assets/Box5-8/grooming_product.jpg" alt="">
+        <img src="assets/Box5-8/Grooming Product.png" alt="">
         </a>
         <a href="products.html">Shop More</a>
     </div>
@@ -97,7 +102,7 @@
      <div class="box-col">
         <h3>Deodrants &perfumes</h3>
         <a href="products.html">
-        <img src="assets/Box5-8/deodrants_perfumes.jpg " alt="">
+        <img src="assets/Box5-8/deodrant pack_result.png " alt="">
         </a>
         <a href="products.html">Shop More</a>
     </div>
@@ -107,29 +112,29 @@
     <div class="box-col">
         <h3>Toy under Ksh3250 </h3>
         <a href="products.html">
-        <img src="assets/Box1-4/toy_package.png " alt="">
+        <img src="assets/Box1-4/toy package.png" alt="">
     </a>
         <a href="products.html" target="_blank">Shop More</a>
     </div>
 
      <div class="box-col">
         
-        <h3>Labour Day Campaign</h3>
+        <h3>School Essentials</h3>
         
         
-       <a href="products.html>" ><img src="assets/Box1-4/may_holiday.png " alt=""></a>
+       <a href="products.html>" ><img src="assets/Box1-4/schoolEsentials.png " alt=""></a>
         
         <a href="products.html">Shop More</a>
     </div>
 <div class="box-col">
-        <h3>Black Friday</h3>
-       <a href="products.html"> <img src="assets/Box1-4/Black_Friday.jpg" alt=""></a>
+        <h3>Books To Read</h3>
+       <a href="products.html"> <img src="assets/Box1-4/book.png" alt=""></a>
         <a href="products.html">Shop More</a>
     </div>
 
      <div class="box-col">
         <h3>Deals in PC</h3>
-       <a href="products.html" ><img src="assets/Box1-4/pc_deals.jpg  " alt=""></a>
+       <a href="products.html" ><img src="assets/Box1-4/pcDeals.png " alt=""></a>
         <a href="products.html">Shop More</a>
     </div>
 </div>
@@ -139,51 +144,60 @@
     <div class="products">
         <a href="products.html">
         <img src="assets/Products-Slider1/baseball.jpg"alt=""> <!--Product_img-->
-        </a>
         
-       <img src="assets/Products-Slider1/golf_stands.png" alt="">
-       <img src="assets/Products-Slider1/men_costumes.jpg" alt="">
-        <img src="assets/Products-Slider1/swim_glasses.png" alt="">
-        <img src="assets/Products-Slider1/mountain_bike.jpg" alt="">
-         <img src="assets/Products-Slider1/swimming_jacket.png" alt="">
+        <img src="assets/Products-Slider1/swimJacket.png" alt="">
+       <img src="assets/Products-Slider1/baseball.png" alt="">
+       <img src="assets/Products-Slider1/sportShoe.png" alt="">
+        <img src="assets/Products-Slider1/swimGlasses.png" alt="">
+        <img src="assets/Products-Slider1/mountain_bike_result.png" alt="">
+         <img src="assets/Products-Slider1/swimmingCostume.png" alt="">
          <img src="assets/Products-Slider1/boxing_gloves.png" alt="">
-        
+        <img src="assets/Products-Slider1/golf_stands.png" alt="">
+        <img src="assets/Products-Slider1/goalNets.png" alt="">
+        <img src="assets/Products-Slider1/weightGymn.png" alt="">
+        <img src="assets/Products-Slider1/tireFloater.png" alt="">
+        <img src="assets/Products-Slider1/poolTable.png" alt="">
+        <img src="assets/Products-Slider1/yogaMats.png" alt="">
+        <img src="assets/Products-Slider1/tennisRacket.png" alt="">
+         <img src="assets/Products-Slider1/Baton.png" alt="">
+    </a>
     </div>
 </div>
 <!--box 9 to 12-->
 <div class="box-row header-box">
     <div class="box-col">
         <h3>Studying Stationaries</h3>
-        <img src="assets/Box9-12/Studying_stationery.jpg " alt="">
+        <img src="assets/Box9-12/studying stationery_result.png" alt="">
         <a href="products.html">Shop More</a>
     </div>
 
      <div class="box-col">
         <h3>Laptop For Study</h3>
-        <img src="assets/Box9-12/laptop_study.jpg  " alt="">
+        <img src="assets/Box9-12/students laptop_result.png " alt="">
         <a href="products.html " >Shop More</a>
     </div>
 
      <div class="box-col">
         <h3>  Office Chair </h3>
-        <img src="assets/Box9-12/office_chair.jpg" alt="">
+        <img src="assets/Box9-12/office chairs_result.png" alt="">
         <a href="products.html">Shop More</a>
     </div>
 
      <div class="box-col">
-        <h3>Virtual_aim</h3>
-        <img src="assets/Box9-12/virtual_aim.jpg " alt="">
+        <h3>Bulb</h3>
+        <img src="assets/Box9-12/bulb_result.png " alt="">
         <a href="products.html">Shop More</a>
     </div>
 </div>
   <!--Product-Slider with Discounted Prices-->
-<div class="products-slider-with-price">
+           
+               <div class="products-slider-with-price">
     <h3>Best Deals </h3>
     <div class ="products">
         <div class="products-card">
             <div class="product-img-container">
-                <img src="assets/Slider-Products -price/kids_bicycle..png" alt="">
-                <h3>Mountain Bike</h3>
+                <img src="assets/Slider-Products -price/sportsBike.png" alt="">
+                <h3>Sports Bike</h3>
           </div>
     <div class="product-offer">
         <p> 30% off</p> <span>Deal</span>
@@ -193,8 +207,8 @@
        </div>
        <div class="products-card">
             <div class="product-img-container">
-                <img src="assets/Slider-Products -price/zuku.png" alt="">
-                <h3>Zuku Satellite</h3>
+                <img src="assets/Slider-Products -price/Dstv.png" alt="">
+                <h3>DSTV Decoder+DishKit</h3>
           </div>
     <div class="product-offer">
         <p> 25% off</p> <span>Deal</span>
@@ -319,37 +333,37 @@
     <h2>Best Phone collections</h2>
     <div class="products">
         <img src="assets/Products-Slider2/iphone16.png" alt="Iphone 16 pro">
-       <img src="assets/Products-Slider2/iphone18.png" alt="Iphone 18 pro">
-       <img src="assets/Products-Slider2/Oppo Find X9.png" alt="Oppo FindX9">
-        <img src="assets/Products-Slider2/Redmi15_note.png" alt="Redmi 15 pro">
-        <img src="assets/Products-Slider2/samsung_ultra.png" alt="Samsung Ultra">
-         <img src="assets/Products-Slider2/Vivo V60.png" alt="Vivo V60">
+       <img src="assets/Products-Slider2/iphone17.png" alt="Iphone 17 ">
+       <img src="assets/Products-Slider2/onePlus.png" alt="Oppo FindX9">
+        <img src="assets/Products-Slider2/Redmi15Note.png" alt="Redmi 15 pro">
+        <img src="assets/Products-Slider2/samsungS26.png" alt="Samsung Ultra">
+         <img src="assets/Products-Slider2/vivo V70.png" alt="Vivo V70">
     </div>
 </div>
 <!--Box 13-16-->
 
 <div class="box-row header-box">
     <div class="box-col">
-        <h3>Cutlery Dispenser</h3>
-        <img src="assets/Box13-16/cultery_dispenser.jpg " alt="">
+        <h3>Plastic Flatware Organizer</h3>
+        <img src="assets/Box13-16/plastic flatware.png" alt="">
         <a href="/">Shop More</a>
     </div>
 
      <div class="box-col">
-        <h3>Horse Pump</h3>
-        <img src="assets/Box13-16/Horse_pump.jpg  " alt="">
+        <h3>Water Dispenser</h3>
+        <img src="assets/Box13-16/water dispenser.png " alt="">
         <a href="/">Shop More</a>
     </div>
 
      <div class="box-col">
-        <h3>Knapsack Sprayer</h3>
-        <img src="assets/Box13-16/knaspack.jpg" alt="">
+        <h3>Submersible Sump Pump</h3>
+        <img src="assets/Box13-16/sump pump.png" alt="">
         <a href="/">Shop More</a>
     </div>
 
      <div class="box-col">
         <h3>CCTv dualset</h3>
-        <img src="assets/Box13-16/CCTv.jpg " alt="">
+        <img src="assets/Box13-16/CCTv.png " alt="">
         <a href="/">Shop More</a>
     </div>
 </div>
@@ -361,6 +375,5 @@
   
     
   </body>
-
 
   </html>

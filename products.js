@@ -1,17 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    // ADD TO CART (basic redirect)
-    document.querySelectorAll(".add-to-cart").forEach(button => {
-        button.addEventListener("click", function () {
+    
+    // ADD TO CART (GLOBAL FIX)
+   
+    document.addEventListener("click", function (e) {
+
+        if (e.target.classList.contains("add-to-cart")) {
             window.location.href = "cart.html";
-        });
+        }
+
     });
 
 });
 
 
 // OPEN BUY NOW MODAL
-function openBuyNow(button){
+
+function openBuyNow(button) {
 
     let product = button.closest(".Product-Card");
 
@@ -40,7 +45,8 @@ function openBuyNow(button){
 
 
 // CLOSE MODAL
-function closeBuyNow(){
+
+function closeBuyNow() {
 
     let modal = document.getElementById("buyNowModal");
 
@@ -50,10 +56,71 @@ function closeBuyNow(){
 }
 
 
-// CONFIRM PURCHASE → REDIRECT TO SIGN IN
-function confirmPurchase(){
+
+// CONFIRM PURCHASE
+
+function confirmPurchase() {
 
     closeBuyNow();
 
     window.location.href = "signin.html";
 }
+
+//PRODUCTS RENDERING
+const fashionProducts = [
+    {
+        name: "DaggerWave Hoodie",
+        price: "Ksh 2000",
+        image: "assets/Collection_Products/fashion trends/daggerwaveHoddie.png"
+    },
+    {
+        name: "Cargo Sweatpant",
+        price: "Ksh 2000",
+        image: "assets/Collection_Products/fashion trends/cargo 1.jpg"
+    },
+    {
+        name: "Adenorah Hoodie",
+        price: "Ksh 800",
+        image: "assets/Collection_Products/fashion trends/adenorah_result.png"
+    }
+];
+
+
+function renderProducts(containerId, products) {
+
+    const container = document.getElementById(containerId);
+
+    if (!container) return;
+
+    products.forEach(product => {
+
+        container.innerHTML += `
+            <div class="Product-Card"
+                 data-name="${product.name}"
+                 data-price="${product.price}"
+                 data-image="${product.image}">
+
+                <img src="${product.image}" width="200">
+
+                <h3>${product.name}</h3>
+
+                <p class="Price-Fashion">${product.price}</p>
+
+                <button class="buy-now" onclick="openBuyNow(this)">
+                    Buy Now
+                </button>
+
+                <button class="add-to-cart">
+                    Add to Cart
+                </button>
+
+            </div>
+        `;
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    renderProducts("fashion-packages", fashionProducts);
+
+});
