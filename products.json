@@ -1,0 +1,402 @@
+{
+  "fashion-packages": [
+    {
+      "name": "DaggerWave Hoodie",
+      "desc": "Unisex streetwear hoodie",
+      "price": "Ksh 2000",
+      "image": "assets/Collection_Products/fashion trends/daggerwaveHoddie.png"
+    },
+    {
+      "name": "Cargo Sweatpant",
+      "desc": "Relaxed cargo pants",
+      "price": "Ksh 2000",
+      "image": "assets/Collection_Products/fashion trends/cargo 1.jpg"
+    },
+    {
+      "name": "Adenorah Hoodie",
+      "desc": "Minimalist hoodie style",
+      "price": "Ksh 800",
+      "image": "assets/Collection_Products/fashion trends/adenorah_result.png"
+    },
+    {
+      "name": "K-POP Hunter T-Shirt",
+      "desc": "Anime superhero tee",
+      "price": "Ksh 900",
+      "image": "assets/Collection_Products/fashion trends/Pop-Hunters.png"
+    },
+    {
+      "name": "Attitude T-Shirt",
+      "desc": "Gothic streetwear tee",
+      "price": "Ksh 1500",
+      "image": "assets/Collection_Products/fashion trends/attitude half half_result.png"
+    },
+    {
+      "name": "Business Outfit Set",
+      "desc": "Formal outfit pack",
+      "price": "Ksh 3000",
+      "image": "assets/Collection_Products/fashion trends/3pack business outfit_result.png"
+    },
+    {
+      "name": "GreyDie Hoodie",
+      "desc": "Oversized hoodie",
+      "price": "Ksh 4000",
+      "image": "assets/Collection_Products/fashion trends/greydie oversized hoodie_result.png"
+    },
+    {
+      "name": "Bones T-Shirt",
+      "desc": "Graphic streetwear tee",
+      "price": "Ksh 2000",
+      "image": "assets/Collection_Products/fashion trends/bonessmoker(black)_result.png"
+    },
+    {
+      "name": "Casual Sweatshirt",
+      "desc": "Soft everyday wear",
+      "price": "Ksh 2000",
+      "image": "assets/Collection_Products/fashion trends/casual sweatshirts_result.png"
+    },
+    {
+      "name": "3D Color Tee",
+      "desc": "3D printed fashion tee",
+      "price": "Ksh 1000",
+      "image": "assets/Collection_Products/fashion trends/3D clothes_result.png"
+    },
+    {
+      "name": "Oxford Shirt",
+      "desc": "Classic formal shirt",
+      "price": "Ksh 1000",
+      "image": "assets/Collection_Products/fashion trends/oxford sleeve shirts_result.png"
+    },
+    {
+      "name": "Lineage Hoodie",
+      "desc": "Dark aesthetic hoodie",
+      "price": "Ksh 2000",
+      "image": "assets/Collection_Products/fashion trends/lineage of dusk_result.png"
+    },
+    {
+      "name": "Baby Outfit",
+      "desc": "Comfortable baby wear",
+      "price": "Ksh 3000",
+      "image": "assets/Collection_Products/fashion trends/unisex baby_result.png"
+    },
+    {
+      "name": "Medusa Streetwear",
+      "desc": "Mythology streetwear",
+      "price": "Ksh 3000",
+      "image": "assets/Collection_Products/fashion trends/medusa_result.png"
+    },
+    {
+      "name": "Pencil Skirt",
+      "desc": "Elegant slim-fit skirt",
+      "price": "Ksh 3000",
+      "image": "assets/Collection_Products/fashion trends/waist pencil_result.png"
+    }
+  ],
+
+  "toys": [
+    {
+      "name": "Lego Toy Set",
+      "desc": "Features main adventures of Lego Cartoon for Kids",
+      "price": "Ksh 2000",
+      "image": "assets/Collection_Products/Toy Collections/lego.png"
+    },
+    {
+      "name": "Toy Sword",
+      "desc": "Best for children that like action cartoons",
+      "price": "Ksh 1000",
+      "image": "assets/Collection_Products/Toy Collections/toySword.png"
+    },
+    {
+      "name": "Building Blocks",
+      "desc": "Fun for Kids",
+      "price": "Ksh 1500",
+      "image": "assets/Collection_Products/Toy Collections/building blocks.png"
+    },
+    {
+      "name": "Airplane Remote Toy",
+      "desc": "Auto control flying toy",
+      "price": "Ksh 2000",
+      "image": "assets/Collection_Products/Toy Collections/drone.png"
+    },
+    {
+      "name": "Spidey Remote Car",
+      "desc": "Spiderman themed remote toy",
+      "price": "Ksh 1800",
+      "image": "assets/Collection_Products/Toy Collections/spidey.png"
+    },
+    {
+      "name": "Race Tracks",
+      "desc": "Road-like racing setup",
+      "price": "Ksh 2500",
+      "image": "assets/Collection_Products/Toy Collections/raceTracks.png"
+    },
+    {
+      "name": "Toy Truck",
+      "desc": "Heavy duty toy truck for kids",
+      "price": "Ksh 1100",
+      "image": "assets/Collection_Products/Toy Collections/truck.png"
+    }
+  ],
+  "devices": [
+  {
+    "name": "Foxelli Bluetooth Minihat",
+    "desc": "Smart wearable Bluetooth hat with built-in wireless audio support",
+    "price": "Ksh 20000",
+    "image": "assets/Collection_Products/Latest Devices/foxelli bluetooth minihat.png"
+  },
+
+  {
+    "name": "Garmin HRM Monitor",
+    "desc": "Advanced heart rate monitor designed for fitness tracking and workouts",
+    "price": "Ksh 18500",
+    "image": "assets/Collection_Products/Latest Devices/Garmin HRM.png"
+  },
+
+  {
+    "name": "Hi Lock AI Voice Recorder",
+    "desc": "Portable AI-powered voice recorder with smart audio capture technology",
+    "price": "Ksh 14000",
+    "image": "assets/Collection_Products/Latest Devices/Hi lock Ai voice recorder.png"
+  },
+
+  {
+    "name": "Levitating Bluetooth Speaker",
+    "desc": "Floating wireless speaker with immersive surround sound experience",
+    "price": "Ksh 26000",
+    "image": "assets/Collection_Products/Latest Devices/levitating bluetooth speaker.png"
+  },
+
+  {
+    "name": "LOOI Smart Robot",
+    "desc": "Interactive desktop AI robot companion with intelligent movement features",
+    "price": "Ksh 45000",
+    "image": "assets/Collection_Products/Latest Devices/LOOI robot.png"
+  },
+
+  {
+    "name": "Portable Monitor Display",
+    "desc": "Ultra-slim external portable monitor for gaming and productivity",
+    "price": "Ksh 32000",
+    "image": "assets/Collection_Products/Latest Devices/portable monitor.png"
+  },
+
+  {
+    "name": "Portable Travel Router",
+    "desc": "Compact high-speed Wi-Fi travel router for secure internet connectivity",
+    "price": "Ksh 12500",
+    "image": "assets/Collection_Products/Latest Devices/portable travel router.png"
+  },
+
+  {
+    "name": "Power Strip Surge Protector",
+    "desc": "Multi-port surge protector with enhanced safety and charging support",
+    "price": "Ksh 6500",
+    "image": "assets/Collection_Products/Latest Devices/power strip surge protector.png"
+  }
+],
+"deodorants-packages": [
+  {
+    "name": "Alvera All Natural Roll-On",
+    "desc": "Gentle plant-based roll-on deodorant made with aloe vera for sensitive skin protection.",
+    "price": "Ksh 850",
+    "image": "assets/Collection_Products/Deodrant collection/Alvera All Natural Roll on.png"
+  },
+  {
+    "name": "Arm & Hammer Essentials Deodorant",
+    "desc": "Natural odor control deodorant powered by baking soda for all-day freshness.",
+    "price": "Ksh 900",
+    "image": "assets/Collection_Products/Deodrant collection/ARM &HAMMER Essentials.png"
+  },
+  {
+    "name": "Athena Club Deodorant",
+    "desc": "Smooth, skin-friendly deodorant with a clean feminine fragrance for daily use.",
+    "price": "Ksh 950",
+    "image": "assets/Collection_Products/Deodrant collection/Athena Club.png"
+  },
+  {
+    "name": "Ban Invisible Roll-On Antiperspirant",
+    "desc": "Long-lasting protection against sweat and odor with invisible dry formula.",
+    "price": "Ksh 800",
+    "image": "assets/Collection_Products/Deodrant collection/Ban Invisible Roll-on Antiperspirant.png"
+  },
+  {
+    "name": "Botanic Hearth Vanilla Deodorant",
+    "desc": "Naturally scented vanilla deodorant made with botanical extracts for soft freshness.",
+    "price": "Ksh 1000",
+    "image": "assets/Collection_Products/Deodrant collection/Botanic Herth Vanilla.png"
+  },
+  {
+    "name": "Carolina Herrera Good Girl Perfume",
+    "desc": "Luxury women's fragrance with sweet floral notes and a bold elegant finish.",
+    "price": "Ksh 6500",
+    "image": "assets/Collection_Products/Deodrant collection/Carolina Herrera Good Girl.png"
+  },
+  {
+    "name": "Carpe Underarm Antiperspirant",
+    "desc": "Clinical-strength sweat protection designed for heavy perspiration control.",
+    "price": "Ksh 1200",
+    "image": "assets/Collection_Products/Deodrant collection/Carpe Underarm Antiperspirant.png"
+  },
+  {
+    "name": "Degree Men Original Deodorant",
+    "desc": "Classic men's deodorant offering reliable 24-hour odor protection.",
+    "price": "Ksh 750",
+    "image": "assets/Collection_Products/Deodrant collection/Degree Men Original.png"
+  },
+  {
+    "name": "Degree Men Ultraclear Black + White",
+    "desc": "Advanced antiperspirant that prevents white marks and yellow stains.",
+    "price": "Ksh 850",
+    "image": "assets/Collection_Products/Deodrant collection/Degree Men Ultraclear Antiperspirant Deodrant Black+white.png"
+  },
+  {
+    "name": "Degree Original Antiperspirant",
+    "desc": "Strong sweat protection deodorant with clean masculine scent.",
+    "price": "Ksh 800",
+    "image": "assets/Collection_Products/Deodrant collection/Degree Original Antiperspirant.png"
+  },
+  {
+    "name": "Dove Advanced Care Antiperspirant",
+    "desc": "Moisturizing deodorant that cares for skin while providing odor protection.",
+    "price": "Ksh 900",
+    "image": "assets/Collection_Products/Deodrant collection/Dove Advanced Care Antiperspirant Deodrant.png"
+  },
+  {
+    "name": "Dove Men+Care Deodorant",
+    "desc": "Hydrating formula designed for men with long-lasting freshness and skin comfort.",
+    "price": "Ksh 950",
+    "image": "assets/Collection_Products/Deodrant collection/DOVE MEN +CARE.png"
+  },
+  {
+    "name": "Dove Men+Care Stick Deodorant",
+    "desc": "Rugged yet gentle deodorant built for active men and daily protection.",
+    "price": "Ksh 900",
+    "image": "assets/Collection_Products/Deodrant collection/Dove Men+Care Deodrant.png"
+  },
+  {
+    "name": "Dr Squatch Natural Deodorant",
+    "desc": "Aluminum-free natural deodorant with earthy masculine scent profile.",
+    "price": "Ksh 1300",
+    "image": "assets/Collection_Products/Deodrant collection/Dr Squatch Natural Mens Deodrant-Aluminium Free.png"
+  },
+  {
+    "name": "Gillette Antiperspirant",
+    "desc": "High-performance deodorant designed for active sweat protection.",
+    "price": "Ksh 800",
+    "image": "assets/Collection_Products/Deodrant collection/Gillete Antiperspirant.png"
+  },
+  {
+    "name": "Harry’s Extra Strength Antiperspirant",
+    "desc": "Strong sweat-blocking formula with clean modern scent.",
+    "price": "Ksh 1100",
+    "image": "assets/Collection_Products/Deodrant collection/Harrys Extra Strength Antiperspirant.png"
+  },
+  {
+    "name": "Lady Speed Stick",
+    "desc": "Classic women’s deodorant with smooth glide and long-lasting freshness.",
+    "price": "Ksh 700",
+    "image": "assets/Collection_Products/Deodrant collection/Lady Speed Stick.png"
+  },
+  {
+    "name": "Lebanta Hair Perfume",
+    "desc": "Light fragrance mist designed specifically for fresh-smelling hair.",
+    "price": "Ksh 1200",
+    "image": "assets/Collection_Products/Deodrant collection/lebanta hair perfume.png"
+  },
+  {
+    "name": "Mitchum Ultimate Deodorant",
+    "desc": "Clinical-strength odor protection with fast-drying formula.",
+    "price": "Ksh 950",
+    "image": "assets/Collection_Products/Deodrant collection/Mitchum Ultimate.png"
+  },
+  {
+    "name": "Mitchum Women Antiperspirant",
+    "desc": "Reliable women’s deodorant offering all-day sweat control.",
+    "price": "Ksh 900",
+    "image": "assets/Collection_Products/Deodrant collection/Mitchum Women Antiperspirant.png"
+  },
+  {
+    "name": "Native Deodorant",
+    "desc": "Popular natural deodorant free from aluminum and harsh chemicals.",
+    "price": "Ksh 1200",
+    "image": "assets/Collection_Products/Deodrant collection/Native Deodrant.png"
+  },
+  {
+    "name": "Old Spice Aluminum-Free Deodorant",
+    "desc": "Classic masculine scent with modern aluminum-free protection.",
+    "price": "Ksh 850",
+    "image": "assets/Collection_Products/Deodrant collection/Old Spice Aluminium free deodrant for men.png"
+  },
+  {
+    "name": "Pacifica Island Deodorant",
+    "desc": "Tropical-inspired natural deodorant with fresh floral notes.",
+    "price": "Ksh 1000",
+    "image": "assets/Collection_Products/Deodrant collection/Pasifica Island.png"
+  },
+  {
+    "name": "Pure Instinct Roll-On",
+    "desc": "Soft pheromone-inspired fragrance roll-on for subtle attraction.",
+    "price": "Ksh 1100",
+    "image": "assets/Collection_Products/Deodrant collection/Pure Instinct Roll on.png"
+  },
+  {
+    "name": "Right Guard Extreme Defense",
+    "desc": "Heavy-duty sweat protection for active lifestyles.",
+    "price": "Ksh 850",
+    "image": "assets/Collection_Products/Deodrant collection/Right Guard Extreme Defense.png"
+  },
+  {
+    "name": "Secret Fresh Antiperspirant",
+    "desc": "Women’s deodorant with clean fresh scent and strong protection.",
+    "price": "Ksh 900",
+    "image": "assets/Collection_Products/Deodrant collection/Secret Fresh Antiperspirant_result.png"
+  },
+  {
+    "name": "Secret Outlast Antiperspirant",
+    "desc": "Long-lasting odor and sweat protection for all-day confidence.",
+    "price": "Ksh 950",
+    "image": "assets/Collection_Products/Deodrant collection/Secret Outlast Antiperspirant_result.png"
+  },
+  {
+    "name": "Swiss Arabian Hayali Rouge",
+    "desc": "Luxury oriental perfume with deep floral and woody notes.",
+    "price": "Ksh 7000",
+    "image": "assets/Collection_Products/Deodrant collection/Swiss Arabian Hayali Rouge_result.png"
+  },
+  {
+    "name": "Tom’s of Maine Mountain Fresh",
+    "desc": "Natural deodorant inspired by fresh outdoor mountain air.",
+    "price": "Ksh 1100",
+    "image": "assets/Collection_Products/Deodrant collection/Toms of Maine Mountain_result.png"
+  },
+  {
+    "name": "Valentino Uomo Born in Roma",
+    "desc": "Premium designer fragrance with warm woody masculine scent.",
+    "price": "Ksh 8500",
+    "image": "assets/Collection_Products/Deodrant collection/Valentino Uomo Born_result.png"
+  },
+  {
+    "name": "Vanicream Aluminum-Free Gel",
+    "desc": "Sensitive skin deodorant free from irritants and fragrance.",
+    "price": "Ksh 1000",
+    "image": "assets/Collection_Products/Deodrant collection/vanicream Aluminium FreeGel_result.png"
+  },
+  {
+    "name": "Versace Eros Perfume",
+    "desc": "Bold luxury fragrance with fresh mint, vanilla, and woody notes.",
+    "price": "Ksh 9000",
+    "image": "assets/Collection_Products/Deodrant collection/Versace Eros_result.png"
+  },
+  {
+    "name": "Victoria’s Secret Body Mist",
+    "desc": "Light feminine fragrance mist with sweet floral scent.",
+    "price": "Ksh 3500",
+    "image": "assets/Collection_Products/Deodrant collection/Victoria Secret_result.png"
+  },
+  {
+    "name": "Victoria’s Secret Bombshell",
+    "desc": "Iconic fragrance with fruity floral notes and elegant finish.",
+    "price": "Ksh 4200",
+    "image": "assets/Collection_Products/Deodrant collection/Victorias Secret Bombshell_result.png"
+  }
+]
+}

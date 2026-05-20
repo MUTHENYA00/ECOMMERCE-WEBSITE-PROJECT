@@ -1,608 +1,104 @@
 <!DOCTYPE html>
-<html lan="en">
-    <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width ,initial-scale=1.0">
-        <title>Product Page</title>
-       <link rel="stylesheet" href="product.css">
-        
-    </head>
+<html lang="en">
 
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
 
-        
-    <nav>
-           <!-- the upper header on the top-->
-        <div class="nav-header">
-            <a href="/">
-            <img src="assets/nav-header 1/Bmday_logo.png"  width="100" alt="BMDAY logo">
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav>
+    <div class="nav-header">
+
+        <!-- LOGO (FIXED ROUTING) -->
+        <a href="index.html">
+            <img src="assets/nav-header 1/Bmday_logo.png" width="100" alt="BMDAY logo">
         </a>
+
         <p>Sign In</p>
-                  <!--Navigation search bar at the top-->
-          
-            <div class="nav-search-tab">
-                 <img src="assets/nav-header 1/search_icon.png"  width="30" alt="Search Icon">
-                <!-- <label>text</label>-->
-            
-                 <input type="text" placeholder="Search for items at Bmday">
-           </div>
-                   <!--Navigation,adding cart -->
-                <div class="nav-icon">
-                    <img src="/assets/nav-header 1/cart_icon.png" width="30"alt=" Cart icon">
-                    <span>Cart</span>
-                </div>
-         </div><!--End of nav-search-bar-->
-        </nav>
 
+        <div class="nav-search-tab">
+            <img src="assets/nav-header 1/search_icon.png" width="30" alt="Search Icon">
+            <input type="text" placeholder="Search for items at Bmday">
+        </div>
 
-         <h2> Toy Collections Under KSh 3200</h2>
-            <div class="Toy-Packages-Collection">
-                
-            
-          <!--Product 1-->
-                    <div class="Product-Card"
-                        data-name="Lego Toy Set"
-                        data-price="Ksh 2000"
-                         data-image="assets/Collection_Products/Toy Collections/lego.png">
+        <div class="nav-icon">
+            <img src="assets/nav-header 1/cart_icon.png" width="30" alt="Cart icon">
+            <span>Cart</span>
+        </div>
 
-                 <img src="assets/Collection_Products/Toy Collections/lego.png" width="200" alt="Lego Toy Set">
+    </div>
+</nav>
 
-                <h3>Lego Toy Set</h3>
-    
-                <p>Features main adventures of Lego Cartoon for Kids</p>
 
-                <p class="Price-Toy">Ksh 2000</p>
+<!-- ================= TOY SECTION ================= -->
+<section id="toys-section">
 
-                <button class="buy-now" onclick="openBuyNow(this)">
-                   Buy Now
-              </button>
+    <h2>Toy Collections Under KSh 3200</h2>
 
-                 <br>
+    <div id="toys" class="Product-Collection">
+  <!-- JS WILL RENDER ALL 15 PRODUCTS HERE -->
+    </div>
 
-                 <button class="add-to-cart">
-                   Add to Cart
-              </button>
+</section>
+<!--Latest Devices-->
+<section id="devices-section">
 
-                </div>
-                <!--Product 2-->
-                <div class="Product-Card"
-                data-name="Toy Sword"
-                data-price="Ksh 2000"
-                 data-image="assets/Collection_Products/Toy Collections/toySword.png">
-                    <img src="assets/Collection_Products/Toy Collections/toySword.png" width="200"alt="Toy Sword">
+    <h2>Latest Devices</h2>
 
-                      <h3>Toy Sword</h3>
-                      <p>Best for children that like action cartoons </p>
-                      <p class="Price-Toy">Ksh 1000</p>
-                      <button class="buy-now" onclick="openBuyNow(this)">Buy Now</button>
-                      <br>
-                       <button class="add-to-cart">
-                        Add to Cart
-                          </button>
-                     
-                </div>
-                <!--Product Page 3-->
-                <div class="Product-Card"
-                data-name="Building Blocks"
-                 data-price="Ksh 1500"
-                   data-image="assets/Collection_Products/Toy Collections/building blocks.png">
-                    <img src="assets/Collection_Products/Toy Collections/building blocks.png" width="200"alt="Building Blocks">
-                    <h3>Building Blocks</h3>
-                    <p >Fun for Kids </p>
-                    <p class="Price-Toy">Ksh 1500</p>
-                    <button class="buy-now"onclick="openBuyNow(this)">Buy Now</button>
-                    <br>
-                    <button class="add-to-cart">
-                        Add to Cart
-                    </button>
-                </div>
+    <div id="devices" class="Product-Collection">
+        <!-- JS WILL RENDER HERE -->
+    </div>
 
-                    <!--Product 4-->
-                    <div class="Product-Card"
-                    data-name="Airplane Remote Toy"
-                 data-price="Ksh 2000"
-                   data-image="assets/Collection_Products/Toy Collections/drone.png">
-                        <img src="assets/Collection_Products/Toy Collections/drone.png" width="200"alt="drone">
-                        <h3>Airplane Remote Toy</h3>
-                        <p>Features autocontrol features</p>
-                        <p class="Price-Toy">Ksh 2000</p>
-                        <button class="buy-now"onclick="openBuyNow(this)">Buy Now</button>
-                        <br>
-                        <button class="add-to-cart">
-                            Add to Cart
-                        </button>
+</section>
 
-                    </div>
-                        <!--Product 5-->
-                        <div class="Product-Card"
-                        data-name="Spidey Remote Car"
-                       data-price="Ksh 1800"
-                        data-image="assets/Collection_Products/Toy Collections/spidey.png">
-                            
-                                <img src="assets/Collection_Products/Toy Collections/spidey.png"
-                                 width="200"alt="Spidey Remote">
-                                 <h3>Spidey Remote Car</h3>
-                                    <p>Features Spiderman, a very thrilling movie for kids</p>
-                                    <p class="Price-Toy">Ksh 1800</p>
-                                    
-                                     <button class="buy-now" onclick="openBuyNow(this)">Buy Now</button>
-                      
-                                    <br>
-                                     <button class="add-to-cart" >
-                                        Add to Cart
-                                    </button>
-                                </div>
+<!-- ================= FASHION SECTION ================= -->
+<section id="fashion-section">
 
-                                <!--Product 6-->
-                                <div class="Product-Card"
-                                    data-name="Race Tracks"
-                                     data-price="Ksh 1200"
-                                     data-image="assets/Collection_Products/Toy Collections/raceTracks.png">
-                                    <img src="assets/Collection_Products/Toy Collections/raceTracks.png" width="200" alt="">
-                                    <h3>Race Tracks</h3>
-                                    <p> Features a road like way </p>
-                                    <p class="Price-Toy">Ksh 2500</p>
-                                       <button class="buy-now" onclick="openBuyNow(this)">
-                                       Buy Now    
-                                       </button>
-                                    <br>
-                                    <button class="add-to-cart">
-                                        Add to Cart
-                                    </button>
-                                </div>
-                                <!--Product 7-->
-                                <div class="Product-Card"
-																data-name="Toy Truck"
-                                     data-price="Ksh 1200"
-                                     data-image="assets/Collection_Products/Toy Collections/truck.png">
-																 
-                                    <img src="assets/Collection_Products/Toy Collections/truck.png" 
-                                  width="200"  alt="Truck">
-                                    <h3> Toy Truck</h3>
-                                    <p>For kids</p>
-                                    <p class="Price-Toy">Ksh 1100</p>
-                                    <button class="buy-now" onclick="openBuyNow(this)">
-                                       Buy Now    
-                                       </button>
-                                    <br>
-                                    <button class="add-to-cart">
-                                        Add To Cart
-                                    </button>
-                                </div>
+    <h2>Fashion Trends Collection</h2>
 
-            </div>
-    <script src="products.js"></script>
+    <div id="fashion-packages" class=" Product-Collection">
+        
+    </div>
 
+</section>
 
-              
+<!-- Deodorants & Perfumes -->
+<section id="deodorants-perfumes-section">
 
-    
-                
- <!--Fashion Trends--> 
- <!--product 1-->
- <h2> Fashion Trends Collection</h2>
-              <div id="fashion-packages"class="Fashion-Trends-Packages">
-                 <div class="Product-Card"
-     data-name="DaggerWave Hoddie"
-     data-price="Ksh 3000"
-     data-image="assets/Collection_Products/fashion trends/daggerwaveHoddie.png">
+    <h2>Deodorants & Perfumes</h2>
 
-    <img src="assets/Collection_Products/fashion trends/daggerwaveHoddie.png" width="200" alt="Lego Toy Set">
+    <div id="deodorants-packages" class="Product-Collection">
+        <!-- JS WILL RENDER PRODUCTS HERE -->
+    </div>
 
-    <h3>DaggerWave Hoddie</h3>
+</section>
 
-    <p>Its unisex</p>
-
-    <p class="Price-Toy">Ksh 2000</p>
-
-    <button class="buy-now" onclick="openBuyNow(this)">
-        Buy Now
-    </button>
-
-    <br>
-
-    <button class="add-to-cart">
-        Add to Cart
-    </button>
-
-</div>
-<!--Product 2-->
-
-                 <div class="Product-Card"
-     data-name="DaggerWave Hoddie"
-     data-price="Ksh 3000"
-     data-image="assets/Collection_Products/fashion trends/cargo 1.jpg">
-
-    <img src="assets/Collection_Products/fashion trends/cargo 1.jpg" width="200" alt="Lego Toy Set">
-
-    <h3>Cargo Sweatpant</h3>
-
-    <p>SweatPants that can be worn by men</p>
-
-    <p class="Price-Fashion">Ksh 2000</p>
-
-    <button class="buy-now" onclick="openBuyNow(this)">
-        Buy Now
-    </button>
-
-    <br>
-
-    <button class="add-to-cart">
-        Add to Cart
-    </button>
-
-</div>
-
-
-              <!--Product 3-->
-                 <div class="Product-Card"
-     data-name="Adenorah Result Hoodie"
-     data-price="Ksh 3000"
-     data-image="assets/Collection_Products/fashion trends/adenorah_result.png">
-
-    <img src="assets/Collection_Products/fashion trends/adenorah_result.png" width="200" alt="Adenorah Result">
-
-    <h3>Adenorah Result Hoodie</h3>
-
-    <p></p>
-
-    <p class="Price-Fashion">Ksh 800</p>
-
-    <button class="buy-now" onclick="openBuyNow(this)">
-        Buy Now
-    </button>
-
-    <br>
-
-    <button class="add-to-cart">
-        Add to Cart
-    </button>
-
-</div>
-
-
-
-           <!--Product 4-->
-                 <div class="Product-Card"
-     data-name="K-POP Hunter T-Shirt"
-     data-price="Ksh 3000"
-     data-image="assets/Collection_Products/fashion trends/Pop-Hunters.png">
-
-    <img src="assets/Collection_Products/fashion trends/Pop-Hunters.png" width="200" alt=" ">
-
-    <h3>K-POP Hunter T-Shirt</h3>
-
-    <p>Features main Netflix release animation that involves superheroes that fight Villains</p>
-
-    <p class="Price-Fashion">Ksh 900</p>
-
-    <button class="buy-now" onclick="openBuyNow(this)">
-        Buy Now
-    </button>
-
-    <br>
-
-    <button class="add-to-cart">
-        Add to Cart
-    </button>
-
-</div>
-
-
-
-           <!--Product 5-->
-                 <div class="Product-Card"
-     data-name="Attitude T-shirt"
-     data-price="Ksh 1500"
-     data-image="assets/Collection_Products/fashion trends/attitude half half_result.png">
-
-    <img src="assets/Collection_Products/fashion trends/attitude half half_result.png" width="200" alt="">
-
-    <h3>Attitude T-Shirt</h3>
-
-    <p>Best for GenZs who like gothic-like thrillers</p>
-
-    <p class="Price-Fashion">Ksh 1500</p>
-
-    <button class="buy-now" onclick="openBuyNow(this)">
-        Buy Now
-    </button>
-
-    <br>
-
-    <button class="add-to-cart">
-        Add to Cart
-    </button>
-
-</div>
-
-
-
-             <!--Product 6-->
-                 <div class="Product-Card"
-     data-name="3pack Business Outfit"
-     data-price="Ksh 3000"
-     data-image="assets/Collection_Products/fashion trends/3pack business outfit_result.png">
-
-    <img src="assets/Collection_Products/fashion trends/3pack business outfit_result.png" width="200" alt=" ">
-
-    <h3>3pack Business Outfit</h3>
-
-    <p> Features corporal designed outfits</p>
-
-    <p class="Price-Fashion">Ksh 3000</p>
-
-    <button class="buy-now" onclick="openBuyNow(this)">
-        Buy Now
-    </button>
-
-    <br>
-
-    <button class="add-to-cart">
-        Add to Cart
-    </button>
-
-</div>
-
-             <!--Product 7-->
-                 <div class="Product-Card"
-     data-name="GreyDie Oversized Hoodie"
-     data-price="Ksh 4000"
-     data-image="assets/Collection_Products/fashion trends/greydie oversized hoodie_result.png">
-
-    <img src="assets/Collection_Products/fashion trends/greydie oversized hoodie_result.png" width="200" alt=" ">
-
-    <h3>GreyDie Oversized Hoodie</h3>
-
-    <p>Latest in Market</p>
-
-    <p class="Price-Fashion">Ksh 4000</p>
-
-    <button class="buy-now" onclick="openBuyNow(this)">
-        Buy Now
-    </button>
-
-    <br>
-
-    <button class="add-to-cart">
-        Add to Cart
-    </button>
-
-</div>
-
-
-            <!--Product 8-->
-                 <div class="Product-Card"
-     data-name="Bones Smoker T-shirts"
-     data-price="Ksh 2500"
-     data-image="assets/Collection_Products/fashion trends/bonessmoker(black)_result.png">
-
-    <img src="assets/Collection_Products/fashion trends/bonessmoker(black)_result.png" width="200" alt="">
-
-    <h3>Bones Smoker T-Shirts</h3>
-
-    <p>Features main graphical T-Shirts with Bone-like Structures</p>
-
-    <p class="Price-Fashion">Ksh 2000</p>
-
-    <button class="buy-now" onclick="openBuyNow(this)">
-        Buy Now
-    </button>
-
-    <br>
-
-    <button class="add-to-cart">
-        Add to Cart
-    </button>
-
-</div>
-
-      <!--Product 9-->
-  <div class="Product-Card"
-     data-name="Casual Sweatshirt"
-     data-price="Ksh 2000"
-     data-image="assets/Collection_Products/fashion trends/casual sweatshirts_result.png">
-
-    <img src="assets/Collection_Products/fashion trends/casual sweatshirts_result.png" width="200" alt="">
-
-    <h3> Casual Sweatshirts</h3>
-
-    <p></p>
-
-    <p class="Price-Fashion">Ksh 2000</p>
-
-    <button class="buy-now" onclick="openBuyNow(this)">
-        Buy Now
-    </button>
-
-    <br>
-
-    <button class="add-to-cart">
-        Add to Cart
-    </button>
-</div>
-    <!--Product 10-->
-    <div class="Product-Card"
-     data-name="Colored 3D T-Shirt"
-     data-price="Ksh 2000"
-     data-image="assets/Collection_Products/fashion trends/3D clothes_result.png">
-
-    <img src="assets/Collection_Products/fashion trends/3D clothes_result.png" width="200" alt="">
-
-    <h3> Colored 3D T-Shirt</h3>
-
-    <p></p>
-
-    <p class="Price-Fashion">Ksh 1000</p>
-
-    <button class="buy-now" onclick="openBuyNow(this)">
-        Buy Now
-    </button>
-
-    <br>
-
-    <button class="add-to-cart">
-        Add to Cart
-    </button>
-</div>
-
-  <!--Product 11-->
-
-  <div class="Product-Card"
-     data-name="Oxford Sleeve Shirt"
-     data-price="Ksh 1000"
-     data-image="assets/Collection_Products/fashion trends/oxford sleeve shirts_result.png">
-
-    <img src="assets/Collection_Products/fashion trends/oxford sleeve shirts_result.png" width="200" alt="Lego Toy Set">
-
-    <h3> Oxford Sleeve shirt</h3>
-
-    <p></p>
-
-    <p class="Price-Fashion">Ksh 1000</p>
-
-    <button class="buy-now" onclick="openBuyNow(this)">
-        Buy Now
-    </button>
-
-    <br>
-
-    <button class="add-to-cart">
-        Add to Cart
-    </button>
-</div>
-
-<!--Product 12-->
-
-                 <div class="Product-Card"
-     data-name="Lineage Of Dusk"
-     data-price="Ksh 2000"
-     data-image="assets/Collection_Products/fashion trends/lineage of dusk_result.png">
-
-    <img src="assets/Collection_Products/fashion trends/lineage of dusk_result.png" width="200" alt="">
-
-    <h3>Lineage Of Dusk</h3>
-
-    <p> </p>
-
-    <p class="Price-Fashion">Ksh 2000</p>
-
-    <button class="buy-now" onclick="openBuyNow(this)">
-        Buy Now
-    </button>
-
-    <br>
-
-    <button class="add-to-cart">
-        Add to Cart
-    </button>
-
-</div>
-<!--Product 13-->
-
-                 <div class="Product-Card"
-     data-name="Baby Results"
-     data-price="Ksh 3000"
-     data-image="assets/Collection_Products/fashion trends/unisex baby_result.png">
-
-    <img src="assets/Collection_Products/fashion trends/unisex baby_result.png" width="150" alt="">
-
-    <h3> Unisex Baby clothes</h3>
-
-    <p> </p>
-
-    <p class="Price-Fashion">Ksh 3000</p>
-
-    <button class="buy-now" onclick="openBuyNow(this)">
-        Buy Now
-    </button>
-
-    <br>
-
-    <button class="add-to-cart">
-        Add to Cart
-    </button>
-
-</div>
-<!--Product 14-->
-                 <div class="Product-Card"
-     data-name="3pack Business Outfit"
-     data-price="Ksh 3000"
-     data-image="assets/Collection_Products/fashion trends/medusa_result.png">
-
-    <img src="assets/Collection_Products/fashion trends/medusa_result.png" width="200" alt="">
-
-    <h3>3pack Business Outfit</h3>
-
-    <p> Features corporal designed outfits</p>
-
-    <p class="Price-Fashion">Ksh 3000</p>
-
-    <button class="buy-now" onclick="openBuyNow(this)">
-        Buy Now
-    </button>
-
-    <br>
-
-    <button class="add-to-cart">
-        Add to Cart
-    </button>
-
-</div>
-<!--Product 15-->
-
-                 <div class="Product-Card"
-     data-name="3pack Business Outfit"
-     data-price="Ksh 3000"
-     data-image="assets/Collection_Products/fashion trends/waist pencil_result.png">
-
-    <img src="assets/Collection_Products/fashion trends/waist pencil_result.png" width="200" alt="Waist pencil">
-
-    <h3>3pack Business Outfit</h3>
-
-    <p> Features corporal designed outfits</p>
-
-    <p class="Price-Fashion">Ksh 3000</p>
-
-    <button class="buy-now" onclick="openBuyNow(this)">
-        Buy Now
-    </button>
-
-    <br>
-
-    <button class="add-to-cart">
-        Add to Cart
-    </button>
-
-</div>
-
-
-<div id="latest-devices" class="Devices-Packages"></div>
-
-              </div>
-
-    <div id="buyNowModal" class="modal">
+<!-- ================= MODAL ================= -->
+<div id="buyNowModal" class="modal">
 
     <div class="modal-content">
 
         <span class="close" onclick="closeBuyNow()">&times;</span>
 
-        <img id="modalImage" width="200">
-
+        <img id="modalImage" width="200" alt="Product image">
         <h2 id="modalName"></h2>
-
         <p id="modalPrice"></p>
 
-        <button onclick="confirmPurchase()">
-    Confirm Purchase
-</button>
+        <button onclick="confirmPurchase()">Confirm Purchase</button>
 
     </div>
 
 </div>
-   
-    </body>
-    </html>
 
 
+<!-- ================= SCRIPT ================= -->
+<script src="products.js"></script>
 
+</body>
+</html>

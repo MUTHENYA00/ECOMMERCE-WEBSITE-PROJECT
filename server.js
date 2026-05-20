@@ -1,9 +1,10 @@
 const express = require('express');
 const path = require('path');
+const fs = require('fs');
+
 const app = express();
 const PORT = 3001;
 
-// CORS Middleware
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
@@ -11,86 +12,126 @@ app.use((req, res, next) => {
   next();
 });
 
-// Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Temporary database
+const USERS_FILE = path.join(__dirname, 'users.json');
+
 let users = [];
 
-// Serve frontend files
+if (!fs.existsSync(USERS_FILE)) {
+  fs.writeFileSync(USERS_FILE, JSON.stringify([], null, 2));
+}
+
+try {
+  users = JSON.parse(fs.readFileSync(USERS_FILE, 'utf8'));
+} catch (err) {
+  users = [];
+}
+
+function saveUsers() {
+  fs.writeFileSync(
+    USERS_FILE,
+    JSON.stringify(users, null, 2)
+  );
+}
+
 app.use(express.static(path.join(__dirname)));
 
-// HOME PAGE
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// SIGNIN PAGE
 app.get('/signin', (req, res) => {
-    res.sendFile(path.join(__dirname, 'signin.html'));
+  res.sendFile(path.join(__dirname, 'signin.html'));
 });
 
-
-// SIGNUP ROUTE
 app.post('/signup', (req, res) => {
-  console.log('Signup request received');
-  console.log('Request body:', req.body);
-  
+
   const { name, email, password } = req.body;
 
   if (!name || !email || !password) {
-    console.log('Missing fields - name:', name, 'email:', email, 'password:', password ? 'present' : 'missing');
-    return res.status(400).send('Name, email, and password are required.');
+    return res.status(400).json({
+      success: false,
+      message: 'All fields are required'
+    });
   }
 
-  const existingUser = users.find((u) => u.email === email);
+  const existingUser = users.find(
+    u => u.email === email
+  );
 
   if (existingUser) {
-    console.log('User already exists:', email);
-    return res.status(409).send('User already exists');
+    return res.status(409).json({
+      success: false,
+      message: 'User already exists'
+    });
   }
 
-  users.push({ name, email, password });
+  const newUser = {
+    id: Date.now(),
+    name,
+    email,
+    password
+  };
 
-  console.log('User registered successfully:', { name, email });
-  console.log('Current users:', users);
+  users.push(newUser);
 
-  res.send('Signup successful!');
+  saveUsers();
+
+  res.json({
+    success: true,
+    message: 'Signup successful',
+    user: {
+      name,
+      email
+    }
+  });
 });
 
-
-// LOGIN ROUTE
 app.post('/login', (req, res) => {
-  console.log('Login request received');
-  console.log('Request body:', req.body);
-  
-  const { email, password } = req.body;
 
-  if (!email || !password) {
-    console.log('Missing fields - email:', email, 'password:', password ? 'present' : 'missing');
-    return res.status(400).send('Email and password are required.');
-  }
+  const { email } = req.body;
 
-  console.log('Login attempt for email:', email);
-
-  const user = users.find((u) => u.email === email && u.password === password);
+  let user = users.find(
+    u => u.email === email
+  );
 
   if (!user) {
-    console.log('Login failed - Invalid credentials for email:', email);
-    return res.status(401).send('Invalid email or password');
+
+    user = {
+      id: Date.now(),
+      name: 'Guest User',
+      email,
+      password: 'test'
+    };
+
+    users.push(user);
+
+    saveUsers();
   }
 
-  console.log('Login successful for:', email);
-  res.send(`Login successful! Welcome, ${user.name}`);
+  res.json({
+    success: true,
+    message: 'Login successful',
+    user: {
+      name: user.name,
+      email: user.email
+    }
+  });
 });
 
-// 404 fallback
+app.get('/users', (req, res) => {
+  res.json(users);
+});
+
 app.use((req, res) => {
-    res.status(404).send('Page not found');
+  res.status(404).json({
+    success: false,
+    message: 'Page not found'
+  });
 });
 
-// START SERVER
 app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on http://localhost:${PORT}`);
 });
